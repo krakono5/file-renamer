@@ -5,19 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileRenamer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="File Renamer" Height="350" Width="700">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="30"></RowDefinition>
-            <RowDefinition Height="100"></RowDefinition>
             <RowDefinition Height="20"></RowDefinition>
-            <RowDefinition Height="60"></RowDefinition>
-            <RowDefinition Height="60"></RowDefinition>
-            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
             <RowDefinition Height="60"></RowDefinition>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Content="Select folder" Width="100" Height="40"/>
+            <Button Content="Select folder" Width="100" Height="25"/>
             <TextBox Name="tbFolderSelect"
                      Margin="10 0 0 0"
                      VerticalAlignment="Stretch"
@@ -25,15 +26,19 @@
         </StackPanel>
         <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Label Content="Prefix" Width="50" Height="25" Margin="20 0 0 0"/>
-            <ComboBox Width="120" Height="30" Margin="10 0 0 0"/>
+            <ComboBox Width="120" Height="25" Margin="10 0 0 0"/>
         </StackPanel>
         <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Label Content="Middle" Width="50" Height="25" Margin="20 0 0 0"/>
-            <ComboBox Width="120" Height="30" Margin="10 0 0 0"/>
+            <ComboBox Width="120" Height="25" Margin="10 0 0 0"/>
         </StackPanel>
         <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Label Content="Suffix" Width="50" Height="25" Margin="20 0 0 0"/>
-            <ComboBox Width="120" Height="30" Margin="10 0 0 0"/>
+            <ComboBox Width="120" Height="25" Margin="10 0 0 0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Start Renaming" Width="100" Height="25"/>
+            <Button Content="Quit" Width="100" Height="25" Margin="20 0 0 0"/>
         </StackPanel>
     </Grid>
 </Window>
