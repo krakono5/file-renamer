@@ -7,6 +7,33 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Select folder" Width="100" Height="40"/>
+            <TextBox Name="tbFolderSelect"
+                     Margin="10 0 0 0"
+                     VerticalAlignment="Stretch"
+                     Text="please select..." Width="400" Height="20"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Label Content="Prefix" Width="50" Height="25" Margin="20 0 0 0"/>
+            <ComboBox Width="120" Height="30" Margin="10 0 0 0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Label Content="Middle" Width="50" Height="25" Margin="20 0 0 0"/>
+            <ComboBox Width="120" Height="30" Margin="10 0 0 0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Label Content="Suffix" Width="50" Height="25" Margin="20 0 0 0"/>
+            <ComboBox Width="120" Height="30" Margin="10 0 0 0"/>
+        </StackPanel>
     </Grid>
 </Window>
